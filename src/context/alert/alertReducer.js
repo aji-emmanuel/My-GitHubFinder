@@ -1,6 +1,6 @@
 import {SET_ALERT, REMOVE_ALERT} from '../types.js';
 
-export default (state, action) =>{
+const reducer = (state, action) =>{
     switch (action.type){
         case SET_ALERT:
             return{
@@ -16,3 +16,5 @@ export default (state, action) =>{
             return state;
     }
 }
+
+export default reducer
