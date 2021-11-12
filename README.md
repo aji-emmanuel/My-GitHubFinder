@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# My-GitHubFinder
+This app is built with React, implementing Context and Reducer Hooks.
+GitHub Finder as the name suggests is used to search for Github Users by entering a search keyword in the search box. 
+All user data are gotten from Github Api.
+>>>>>>> 972da72df8494e5f0f61087c6af6303053927fbe
