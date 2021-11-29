@@ -5,9 +5,9 @@ import {Link} from 'react-router-dom'
 function Navbar ({icon, title}) {
     return (
         <nav className='navbar'>
-            <h1>
-                <i className={icon}></i> {title}
-            </h1>
+            <p>
+                <i className={icon}></i> <strong>{title}</strong>
+            </p>
             <div>
                 <Link to ='/'>Home</Link>
                 <Link to ='/about'>About</Link>

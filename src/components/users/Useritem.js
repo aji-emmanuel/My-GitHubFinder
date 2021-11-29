@@ -1,14 +1,15 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-function UserItem ({user:{avatar_url, login, html_url}}) {
+function UserItem ({user:{avatar_url, login}}) {
     return (
-        <div className='card text-center'>
-            <img src={avatar_url} alt='' className='round-img' style={{width: '60px', outerHeight:'60px'}} />
-            <h3>{login}</h3>
-            <Link to={`/user/${login}`} 
-                className='btn-light btn-sm btn:hover'>Profile</Link>
-        </div>
+        <Link to={`/user/${login}`} >
+            <div className='card text-center'>
+                <img src={avatar_url} alt='' className='round-img' style={{width: '60px', outerHeight:'60px'}} />
+                <h3>{login}</h3>
+                <button className='btn btn-sm'>Profile</button>
+            </div>
+        </Link>
     )
 }
 

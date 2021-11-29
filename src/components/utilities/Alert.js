@@ -8,7 +8,6 @@ const Alert = () => {
         message !=null && (
         <div className={`alert alert-${type} text-center`}>
             <i className= 'fas fa-info-circle'></i> {message}
-           
         </div>
     ))
 }

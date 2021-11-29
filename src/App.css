@@ -114,9 +114,52 @@ img {
 .card {
   padding: 1rem;
   background-color: white;
-  border: #ccc 2px solid;
+  border: #2067a1 2px solid;
   border-radius: 1rem;
   margin: 0.7rem 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: whitesmoke;
+  transform: translateZ(30%);
+  transition: 0.5s;
+}
+
+.card:hover .btn {
+  background-color: #2067a1;
+  color: white;
+}
+
+.card:hover h3 {
+  color: #2067a1;
+}
+
+.card h3 {
+  color: black;
+}
+
+.card .btn {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  background-color: white;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 2px 13px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  border-radius: 50px;
+  border: 2px solid #2067a1;
+  color: #2067a1;
+}
+
+.card .btn:hover {
+  background-color: #2067a1;
+  color: white;
 }
 
 /* List */
@@ -386,16 +429,23 @@ table th {
   position: relative;
   bottom: 0;
   width: 100%;
-  background-color: white;
-  color: rgb(19, 18, 18);
+  background-color: #2067a1;
   text-align: center;
-  border-top: rgb(173, 171, 171) 2px solid;
   padding: 1rem;
+  margin-top: 2rem;
 }
 
 .footer a {
-  color: #2067a1;
+  color: white;
+}
+
+.footer i {
+  color: white;
   margin: 0.5rem;
+}
+
+.footer p {
+  color: white;
 }
 
 .footer a:hover {
