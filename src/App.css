@@ -43,7 +43,7 @@ img {
 /* Utilities */
 .container {
   position: relative;
-  min-height: 80vh;
+  min-height: 76vh;
   margin: auto;
   overflow: hidden;
   padding: 0 1rem;
@@ -119,6 +119,7 @@ img {
   margin: 0.7rem 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+  overflow-wrap: break-word;
 }
 
 .card:hover {
@@ -233,6 +234,12 @@ img {
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.repogrid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
 }
 
@@ -462,11 +469,31 @@ a.menu:hover {
     display: none;
   }
 
+  h3 {
+    font-size: 15px;
+  }
+
+  .card {
+    overflow: hidden;
+  }
+
+  .card .btn {
+    background-color: #2067a1;
+    color: white;
+  }
+
   .grid-2,
   .grid-3,
   .grid-4 {
     grid-template-columns: 1fr;
   }
+
+  .repogrid-4 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+  }
+
+  /* Card Styles */
 
   /* Text Styles */
   .x-large {
