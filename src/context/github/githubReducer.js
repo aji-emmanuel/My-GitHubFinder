@@ -24,7 +24,8 @@ const reducer = (state, action) => {
         case CLEAR_USERS:
             return{
                 ...state,
-                users: []
+                users: [],
+                text: ''
             };
         case GET_REPOS:
             return{

@@ -10,7 +10,7 @@ function Users() {
     return <Spinner />
     }else{
         return (
-            <div className='grid-4'>
+            <div className='repogrid-4'>
                 {githubContext.users.map(user => 
                 <UserItem key={user.id}  user = {user} />)}
             </div>

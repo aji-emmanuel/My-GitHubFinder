@@ -14,7 +14,7 @@ function Repos() {
                 {repos.map(repo => 
                 <RepoItem key={repo.id}  repo = {repo} />)}
             </div>
-             {repos.length===9 && <div className='card text-center'>
+             {repos.length===12 && <div className='card text-center'>
                 <a className='btn' href={`https://github.com/${user.login}?tab=repositories`} target='_blank'  rel="noreferrer">
                     View all Repositories on GitHub
                 </a>
