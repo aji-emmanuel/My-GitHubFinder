@@ -4,11 +4,12 @@ function RepoItem({repo}) {
     return (
         <Fragment>
             <div className='card'>
-                <a href={repo.html_url} style={{color:'blue'}}><b>{repo.name}</b></a>
+                <a href={repo.html_url} target='_blank' rel="noreferrer" style={{color:'blue'}}>
+                    <b>{repo.name}</b>
+                </a>
                 <p>{repo.description}</p>
                 <h6>{repo.language}</h6>
             </div>
-            
         </Fragment>
     )
 }

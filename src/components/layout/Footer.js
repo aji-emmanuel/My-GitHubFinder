@@ -5,7 +5,7 @@ export const Footer = () => {
         <Fragment>
             <div className='footer text-center'>
                     <p>
-                        <a href="https://www.linkedin.com/in/emmanuel-ajibode-8168a998" target='_blank' rel="noreferrer"><i className="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/emmanuel-ajibode/" target='_blank' rel="noreferrer"><i className="fab fa-linkedin"></i></a>
                         <a href="mailto:ajiemilo@gmail.com" target='_blank' rel="noreferrer"><i className="far fa-envelope"></i></a>
                         <a href="https://www.instagram.com/ajiemilo" target='_blank' rel="noreferrer"><i className="fab fa-instagram icon-3x"></i></a>
                         <i className="fas fa-phone-square"> +2348062316992</i>
