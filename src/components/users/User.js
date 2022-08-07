@@ -38,7 +38,7 @@ const User = ({match}) => {
                         <strong className='text-center'>Bio</strong>
                         <p>{bio}</p>
                     </Fragment>}
-                    <a href={html_url} className='btn my-1 text-center'>Visit Github Profile</a>
+                    <a href={html_url} target='_blank' rel="noreferrer" className='btn my-1 text-center'>Visit Github Profile</a>
                     <ul>
                         <li>
                             {login && <Fragment>
@@ -52,7 +52,9 @@ const User = ({match}) => {
                         </li>
                         <li>
                             {blog && <Fragment>
-                            <strong>Website: <a href={blog} style={{color:'blue'}}>{blog}</a></strong>
+                                <strong>
+                                    Website: <a href={blog} target='_blank' rel="noreferrer" style={{color:'blue'}}>{blog}</a>
+                                </strong>
                             </Fragment>}
                         </li>
                     </ul>
