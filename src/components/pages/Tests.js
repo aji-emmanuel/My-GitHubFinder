@@ -36,11 +36,12 @@ function TestPage() {
                 <div className='page-content'>
                     <div className='input-test'>
                         <div className="form-control">
-                            <label htmlFor="number-input">Number Only Input</label>
+                            <label htmlFor="number-input">Number Only Inputss</label>
                             <input id="number-input"
                                     name="number"
                                     placeholder="Takes only numbers"
                                     onInput={onlyNumbers}
+                                    onKeyDown={numsOnly}
                             />
                         </div>
                     </div>
