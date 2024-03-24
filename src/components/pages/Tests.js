@@ -4,7 +4,7 @@ function TestPage() {
 
     const numsOnly = async (e) =>{
         let charCode = (e.which) ? e.which : e.keyCode;
-        if((charCode < 48 || charCode > 57) && charCode != 46){
+        if((charCode < 48 || charCode > 57) && charCode !== 46){
             e.preventDefault();
             return false;
         }
