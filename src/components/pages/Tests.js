@@ -4,7 +4,7 @@ function TestPage() {
 
     const numsOnly = async (e) =>{
         let charCode = (e.which) ? e.which : e.keyCode;
-        if(charCode < 48 || charCode > 57){
+        if((charCode < 48 || charCode > 57) && charCode != 46){
             e.preventDefault();
             return false;
         }
@@ -14,17 +14,17 @@ function TestPage() {
     const onlyNumbers = async (e) => {
         const elInput = e.target;
         // Get start of selection (caret offset when typing)
-        //const nSelStart = elInput.selectionStart;
+        const nSelStart = elInput.selectionStart;
         // Get last typed character (modify for your own needs)
-        //const sLastTyped = elInput.value.substr(nSelStart-1, 1);
-        // if(!(['0','1','2','3','4','5','6'].includes(sLastTyped))){
-        //     e.preventDefault();
+        const sLastTyped = elInput.value.substr(nSelStart-1, 1);
+        if(!(['0','1','2','3','4','5','6'].includes(sLastTyped))){
+            e.preventDefault();
             
-        // console.log('Last typed character:', sLastTyped);
+        console.log('Last typed character:', sLastTyped);
             elInput.value = elInput.value?.replace(/[^0-9]/g,'')?.trim();
             return numsOnly(e);
         //}
-    };
+    }};
     
     return (
         <Fragment>
@@ -36,7 +36,7 @@ function TestPage() {
                 <div className='page-content'>
                     <div className='input-test'>
                         <div className="form-control">
-                            <label htmlFor="number-input">Number Only Inputss</label>
+                            <label htmlFor="number-input">Number Only Input</label>
                             <input id="number-input"
                                     name="number"
                                     placeholder="Takes only numbers"
